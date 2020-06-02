@@ -1,0 +1,80 @@
+html,body {
+   
+    height: 100%;
+}
+*,*::before ,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Jost', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: #ecf0f1;
+    color: #4a5568;
+}
+header {
+background-color: #fff;
+}
+nav{
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img {
+    width: 80px;
+}
+.menu {
+    list-style: none;
+}
+.menu li {
+    display: inline-block;
+}
+.menu li + li {
+    margin-left: 1.2rem;
+}
+.menu a{
+    text-decoration: none;
+    /* It will take body color as inherit property */
+    color: inherit;
+    display: inline-block;
+    padding: .75rem 1rem;
+    /* It is complte here */
+
+    /* For additional style */
+    background-color: ivory;
+    border-radius: 2px;
+    transition: background-color 200ms linear , color 200ms linear;
+}
+/* additonal  */
+.menu a:hover {
+    background-color: mediumseagreen;
+    color: #fff;
+}
+
+
+/* External JAS CSS  */
+
+/* default style */
+.selectnav {
+    background-color: mediumseagreen;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    font: inherit;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 3px;
+    display: none; 
+    outline: none;
+}
+
+/* small screen */
+@media screen and (max-width: 900px) {
+  .js #nav { display: none; }
+  .js .selectnav { display: block;
+}
+}
